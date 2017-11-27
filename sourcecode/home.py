@@ -10,6 +10,18 @@ app = Flask(__name__)
 def home():
   return render_template('home.html') #Renders the appropriate templates
 
+@app.route('/about') #Redirects to the about page
+def about():
+  return render_template('master.html') # Renders the master template
+
+@app.route('/contact')
+def contact():
+  return render_template('contact.html') #Renders the contact template
+
+@app.route('/services') #Redirects to the appropriate page
+def services():
+  return render_template('master.html') #Renders the master template
+
 @app.errorhandler(404) #Error handing, redirects to error screen
 def page_not_found(error):
   return "Couldn't find the page you requested.", 404
