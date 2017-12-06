@@ -12,7 +12,7 @@ def home():
 
 @app.route('/about') #Redirects to the about page
 def about():
-  return render_template('about.html') # Renders the master template
+  return render_template('about.html') # Renders the about template
 
 @app.route('/contact')
 def contact():
@@ -20,7 +20,11 @@ def contact():
 
 @app.route('/services') #Redirects to the appropriate page
 def services():
-  return render_template('services.html') #Renders the master template
+  return render_template('services.html') #Renders the services template
+
+@app.route('/media')
+def media():
+    return render_template('services.html')
 
 @app.errorhandler(404) #Error handing, redirects to error screen
 def page_not_found(error):
