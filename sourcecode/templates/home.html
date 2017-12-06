@@ -2,7 +2,17 @@
 <html>
 <head>
 <style>
-u1 {
+body {
+    background: #555;
+}
+.content {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+<!-- Creates the horizontal list -->
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -12,20 +22,30 @@ li {
     display: inline;
 }
 </style>
-  <title>GreenLeaf Cleaning Services </title>
+ <title>GreenLeaf Cleaning Services </title>
+ <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+  <!--This takes in the style.css -->
 </head>
 <body>
-<h1><a href="http://localhost:5000/home">Green Leaf Cleaning Services</a></h1>
-<!-- links back to the homepage -->
-<ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#services">Services</a></li>
-  <li><a href="#about">About</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href=#Social">Social Media</a></li>
-</ul>
-<h3>Recent Work!</h3>
-<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FGreenLeafEcoCleaningService%2Fposts%2F1766064830131223&width=500" width="500" height="379" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
+<div class="content">
+ <h1><a href="http://localhost:5000/home">Green Leaf Cleaning Services</a></h1>
+<!-- links back to the homepage -->
+
+ <ul>
+   <li><a href="http://localhost:5000/home">Home</a></li>
+   <li><a href="http://localhost:5000/services">Services</a></li>
+   <li><a href="http://localhost:5000/about">About</a></li>
+   <li><a href="http://localhost:5000/contact">Contact</a></li>
+   <li><a href="http://localhost:5000/media">Social Media</a></li>
+ </ul>
+
+ <h3>Recent Work!</h3>
+ <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FGreenLeafEcoCleaningService%2Fposts%2F1766064830131223&width=500" width="500" height="379" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+ <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FGreenLeafEcoCleaningService%2Fposts%2F1764181800319526&width=500" width="500" height="496" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+ <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FGreenLeafEcoCleaningService%2Fposts%2F1751626664908373&width=500" width="500" height="733" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+</div>
 </body>
 </html>

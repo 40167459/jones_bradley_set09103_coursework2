@@ -1,10 +1,62 @@
 <!doctype html>
+<html>
 <head>
-  <title>About</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
-  <!-- Inputs the CSS stylesheet -->
+<style>
+body {
+    background: #555;
+}
+.content {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}
+<!-- Creates the horizontal list -->
+ul.a {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+</style>
+ <title>GreenLeaf Cleaning Services </title>
+ <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+  <!--This takes in the style.css -->
 </head>
 <body>
 
+<div class="content">
+ <h1><a href="http://localhost:5000/home">Green Leaf Cleaning Services</a></h1>
+<!-- links back to the homepage -->
+
+ <ul class="a">
+   <li><a href="http://localhost:5000/home">Home</a></li>
+   <li><a href="http://localhost:5000/services">Services</a></li>
+   <li><a href="http://localhost:5000/about">About</a></li>
+   <li><a href="http://localhost:5000/contact">Contact</a></li>
+   <li><a href="http://localhost:5000/media">Social Media</a></li>
+ </ul>
+
+ <p>GreenLeaf Cleaning Service</p>
+ <p>Domestic and Commercial Professional cleaning services.</p>
+ <p>We are an Eco-friendly cleaning service based in the Edinburgh area. We provide a professional service which is Eco-friendly and affordable. We feel here at ‘GreenLeaf’ that you, the customer should be able to have your living space cleaned ecologically at the same price as a non-Eco friendly company.</p>
+
+ <p>So why us?</p>
+ <ul style="list-style-type:disc">
+  <li>All our products have no hazardous substances</li>
+  <li>Are phosphate and phosphonate free</li>
+  <li>Are readily biodegradable</li>
+  <li>Are all environmentally friendly</li>
+  <li>Have a reduced impact on aquatic life</li>
+  <li>Are not tested on animals</li>
+  <li>A+ rated vacuums</li>
+  <li>Guaranteed competitive prices</li>
+ </ul>
+
+
+</div>
 </body>
 </html>
